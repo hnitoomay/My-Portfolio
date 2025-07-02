@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <title>My Portfolio</title>
+    <script type="module" crossorigin src="/MyPortfolio/assets/index-D_0r5a7c.js"></script>
+    <link rel="stylesheet" crossorigin href="/MyPortfolio/assets/index-DQ05Yvro.css">
+  </head>
+  <body class="bg-gray-100 text-gray-800 font-sans pt-20">
+    <nav class="bg-white border-b shadow py-4 fixed top-0 w-full z-50">
+      <div class="max-w-5xl mx-auto px-4 flex justify-between items-center">
+        <!-- Logo -->
+        <a href="#" class="text-2xl font-bold text-teal-400">MyPortfolio</a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-6">
+          <a href="#home" class="nav-links text-slate-950 hover:text-teal-400"
+            >About Me</a
+          >
+          <a
+            href="#projects"
+            class="nav-links text-slate-950 hover:text-teal-400"
+            >My Projects</a
+          >
+
+          <a
+            href="#contact"
+            class="nav-links text-slate-950 hover:text-teal-400"
+            >Contact</a
+          >
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menu-btn"
+          class="md:hidden text-slate-950 focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden mt-3 space-y-2 px-4">
+        <a href="#home" class="text-slate-950 hover:text-teal-400">About Me</a>
+        /
+        <a href="#projects" class="text-slate-950 hover:text-teal-400 ml-3"
+          >My Projects</a
+        >
+        /
+        <a href="#contact" class="text-slate-950 hover:text-teal-400 ml-3"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- Add content section -->
+    <main class="max-w-5xl mx-auto px-4 py-10">
+      <div
+        id="home"
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center px-4 md:px-8"
+      >
+        <!-- Image first on mobile, second on desktop -->
+        <div class="order-1 md:order-2 flex justify-center">
+          <img
+            src="/MyPortfolio/assets/hnit-BIWSsk97.jpg"
+            class="w-64 md:w-96 rounded-full shadow-lg"
+            alt="Hnit Oo May"
+          />
+        </div>
+
+        <!-- Text content -->
+        <div
+          class="order-2 md:order-1 mt-4 md:mt-6 md:mr-5 text-center md:text-left"
+        >
+          <h1 class="text-3xl md:text-4xl text-slate-600 font-bold mb-4">
+            Welcome to My Portfolio
+          </h1>
+          <h2 class="text-xl md:text-2xl italic text-gray-400 font-bold mb-2">
+            I am Hnit Oo May
+          </h2>
+          <h2 class="text-xl md:text-2xl text-teal-400 font-bold mb-4">
+            Web Developer
+          </h2>
+          <p class="line-clamp-6 text-base mb-4">
+           I am a young learner who is willing to build a long-term career in web development fields. I am passionate about web development and seeking an opportunity to apply my coding skills in real-world environment and contribute to your team’s success. 
+          </p>
+          <a
+            href="./src/hnitoomay_CV.pdf"
+            download="HnitOoMay_CV.pdf"
+            class="bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 transition mt-3 inline-block"
+          >
+            Download My CV
+          </a>
+        </div>
+      </div>
+
+      <section id="skills" class="max-w-5xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-8 text-center text-Teal-700">
+          My Skills
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Left Column (4 skills) -->
+          <div class="space-y-6">
+            <!-- Skill -->
+            <div class="flex items-center space-x-4">
+              <img
+                src="/MyPortfolio/assets/Laravel.svg-DNfGyyND.png"
+                alt="Laravel"
+                class="w-10 h-10"
+              />
+              <div class="w-full">
+                <p>Laravel</p>
+                <div class="bg-gray-200 h-3 rounded">
+                  <div class="bg-orange-500 h-3 rounded w-[70%]"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-4">
+              <img
+                src="/MyPortfolio/assets/avuzxc7c9-C_l9BYoV.webp"
+                alt="CSS"
+                class="w-10 h-10"
+              />
+              <div class="w-full">
+                <p>CSS</p>
+                <div class="bg-gray-200 h-3 rounded">
+                  <div class="bg-pink-500 h-3 rounded w-[70%]"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-4">
+              <img
+                src="/MyPortfolio/assets/php-logo-png_seeklogo-265704-Dk6vK8ve.png"
+                alt="JavaScript"
+                class="w-10 h-10"
+              />
+              <div class="w-full">
+                <p>PHP</p>
+                <div class="bg-gray-200 h-3 rounded">
+                  <div class="bg-yellow-400 h-3 rounded w-[50%]"></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center space-x-4">
+              <img
+                src="/MyPortfolio/assets/st_small_507x507-pad_600x600_f8f8f8.u1-D41rhj1k.jpg"
+                alt="Git"
+                class="w-10 h-10"
+              />
+              <div class="w-full">
+                <p>MySQL</p>
+                <div class="bg-gray-200 h-3 rounded">
+                  <div class="bg-emerald-500 h-3 rounded w-[60%]"></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center space-x-4">
+              <img
+                src="./src/image/tailwind-css-logo-png_seeklogo-354653.png"
+                alt="PHP"
+                class="w-10 h-10"
+              />
+              <div class="w-full">
+                <p>Tailwind CSS</p>
+                <div class="bg-gray-200 h-3 rounded">
+                  <div class="bg-indigo-500 h-3 rounded w-[30%]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column (3 skills) -->
+          <div class="space-y-6">
+            <div class="flex items-center space-x-4">
+              <img
+                src="/MyPortfolio/assets/png-clipart-bootstrap-logo-thumbnail-tech-companies-thumbnail-BJIAi8gT.png"
+                alt="Laravel"
+                class="w-10 h-10"
+              />
+              <div class="w-full">
+                <p>Bootstrap</p>
+                <div class="bg-gray-200 h-3 rounded">
+                  <div class="bg-red-500 h-3 rounded w-[80%]"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-4">
+              <img
+                src="/MyPortfolio/assets/kisspng-javascript-web-applications-scalable-vector-graphi-1713908433870-Du69un3I.webp"
+                alt="MySQL"
+                class="w-10 h-10"
+              />
+              <div class="w-full">
+                <p>JavaScript</p>
+                <div class="bg-gray-200 h-3 rounded">
+                  <div class="bg-teal-500 h-3 rounded w-[60%]"></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center space-x-4">
+              <img
+                src="/MyPortfolio/assets/react-1-logo-png-transparent%20(1)-Bzfgxuvh.png"
+                alt="Git"
+                class="w-10 h-10"
+              />
+              <div class="w-full">
+                <p>React</p>
+                <div class="bg-gray-200 h-3 rounded">
+                  <div class="bg-sky-500 h-3 rounded w-[30%]"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center space-x-4">
+              <img
+                src="/MyPortfolio/assets/figma-logo-512-BSBC9xri.webp"
+                alt="Git"
+                class="w-10 h-10"
+              />
+              <div class="w-full">
+                <p>Figma</p>
+                <div class="bg-gray-200 h-3 rounded">
+                  <div class="bg-purple-400 h-3 rounded w-[50%]"></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center space-x-4">
+              <img src="/MyPortfolio/assets/image-BfxWfK4H.png" alt="CSS" class="w-10 h-10" />
+              <div class="w-full">
+                <p>Canva</p>
+                <div class="bg-gray-200 h-3 rounded">
+                  <div class="bg-blue-500 h-3 rounded w-[70%]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="projects">
+          <h2 class="text-3xl font-bold m-8 text-center text-Teal-700">
+            My Projects
+          </h2>
+          <!-- Video -->
+          <div class="">
+            <h3 class="text-xl font-semibold text-teal-400 mb-3">
+              # Terra Lab POS System 
+            </h3>
+            <p class="text-sm m-2 text-gray-600">
+    Repo Link:
+    <a href="https://github.com/hnitoomay/terra-lab-POS" target="_blank" class="text-blue-500 underline hover:text-blue-700">
+      View Project
+    </a>
+  </p>
+            <div class="">
+              <div style="padding: 53.15% 0 0 0; position: relative">
+                <iframe
+                  src="https://player.vimeo.com/video/1098116782?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                  "
+                  title="0702(1)"
+                >
+                </iframe>
+              </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+
+            <!-- Description -->
+
+            <!-- Tech Stack -->
+            <div class="mb-6">
+              <h4 class="text-xl mt-3 font-semibold text-gray-800 mb-2">
+                🛠️ Tech Stack
+              </h4>
+              <p class="text-gray-600">Laravel 11, Bootstrap, JavaScript</p>
+            </div>
+
+            <!-- Features -->
+            <div>
+              <h4 class="text-xl font-semibold text-gray-800 mb-2">
+                ✨ Specific Features
+              </h4>
+              <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                <li>Authentication with Laravel Breeze and social login</li>
+                <li>
+                  Authorization and role-based access control using middleware
+                </li>
+                <li>
+                  Management of admins, users, products, orders, payments (CRUD)
+                </li>
+                <li>Stock level management</li>
+                <li>Search, sorting, filtering, pagination</li>
+                <li>Add to cart functionality</li>
+                <li>Rating and commenting system</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-6">
+            <h3 class="text-xl font-semibold text-teal-400 mb-3">
+              # Project Management System
+            </h3>
+              <p class="text-sm m-2 text-gray-600">
+    Repo Link:
+    <a href="https://github.com/hnitoomay/project-management-app" target="_blank" class="text-blue-500 underline hover:text-blue-700">
+      View Project
+    </a>
+  </p>
+            <div class="">
+              <div style="padding: 53.15% 0 0 0; position: relative">
+                <iframe
+                  src="https://player.vimeo.com/video/1098119197?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                  "
+                  title="0702"
+                >
+                </iframe>
+              </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+
+            <!-- Description -->
+            <div class="mt-3">
+              <h4 class="text-xl font-semibold text-gray-800 mb-2">
+                🛠️ Tech Stack
+              </h4>
+              <p class="text-gray-700 leading-relaxed">
+                Frontend: React.js, Inertia.js, Tailwind CSS Backend: Laravel 11
+                Database: MySQL Authentication: Laravel Breeze (Inertia version)
+                Image Handling: Laravel File Storage
+              </p>
+            </div>
+          </div>
+          <div class="mt-6">
+            <h3 class="text-xl font-semibold text-teal-400 mb-3">
+              # Content Management System with pure PHP
+               <p class="text-sm m-2 text-gray-600">
+    Repo Link:
+    <a href="https://github.com/hnitoomay/SocialMedia-Campaign-" target="_blank" class="text-blue-500 underline hover:text-blue-700">
+      View Project
+    </a>
+  </p>
+            </h3>
+            <div class="">
+              <div style="padding: 53% 0 0 0; position: relative">
+                <iframe
+                  src="https://player.vimeo.com/video/1098120571?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                  "
+                  title="php"
+                >
+                </iframe>
+              </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+
+            <!-- Description -->
+            <div class="mt-3">
+              <h4 class="text-xl font-semibold text-gray-800 mb-2">
+                🛠️ Tech Stack
+              </h4>
+              <p class="text-gray-700 leading-relaxed">HTML, CSS, PHP, MySQL</p>
+            </div>
+          </div>
+          <div class="mt-6">
+            <h3 class="text-xl font-semibold text-teal-400 mb-3">
+              # Food Ordering System
+            </h3>
+              <p class="text-sm m-2 text-gray-600">
+    Repo Link:
+    <a href="https://github.com/hnitoomay/POS-system" target="_blank" class="text-blue-500 underline hover:text-blue-700">
+      View Project
+    </a>
+  </p>
+            <div class="">
+              <div style="padding: 53% 0 0 0; position: relative">
+                <iframe
+                  src="https://player.vimeo.com/video/1098128101?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                  "
+                  title="0702 (1)"
+                >
+                </iframe>
+              </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="mb-6">
+              <h4 class="text-xl font-semibold text-gray-800 mb-2">
+                🛠️ Tech Stack
+              </h4>
+              <p class="text-gray-600">Laravel 9, Bootstrap, Jquery</p>
+            </div>
+
+            <!-- Features -->
+            <div>
+              <h4 class="text-xl font-semibold text-gray-800 mb-2">
+                ✨ Specific Features
+              </h4>
+              <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                <li>User-friendly interface</li>
+                <li>Product management</li>
+                <li>Authentication with Laravel jetstream and Authorization</li>
+                <li>Customer management</li>
+                <li>Add to Cart</li>
+                <li>Order Management</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-6">
+  <h3 class="text-xl font-semibold text-teal-400 mb-3">
+    # Mini Projects
+  </h3>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+    <!-- Project 2 -->
+    <div class="text-center">
+      <h4 class="text-lg font-medium mb-2 text-teal-600">Camping Shop</h4>
+      <img src="/MyPortfolio/assets/aa-D0-79u1L.png" alt="Project 2" class="rounded-lg shadow-md w-full object-cover h-48">
+      <p class="text-sm text-gray-600">
+    Repo Link:
+    <a href="https://hnitoomay.github.io/Camping-Retail/" target="_blank" class="text-blue-500 underline hover:text-blue-700">
+      View Project
+    </a>
+  </p>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="text-center">
+      <h4 class="text-lg font-medium mb-2 text-teal-600">Laravel</h4>
+      <img src="/MyPortfolio/assets/pic%20(1)-DAsCL4AU.png" alt="Project 3" class="rounded-lg shadow-md w-full object-cover h-48">
+      <p class="text-sm text-gray-600">
+    Repo Link:
+    <a href="https://github.com/hnitoomay/MinShinSaw" target="_blank" class="text-blue-500 underline hover:text-blue-700">
+      View Project
+    </a>
+  </p>
+    </div>
+    <!-- Project 1 -->
+    <div class="text-center">
+      <h4 class="text-lg font-medium mb-2 text-teal-600">Movie List</h4>
+      <img src="/MyPortfolio/assets/pic%20(2)-JXChMLfz.png" alt="Project 1" class="rounded-lg shadow-md w-full object-cover h-48">
+      <p class="text-sm text-gray-600">
+    Repo Link:
+    <a href="" target="_blank" class="text-blue-500 underline hover:text-blue-700">
+      View Project
+    </a>
+  </p>
+    </div>
+
+  </div>
+</div>
+
+        </div>
+        <div id="contact">
+          <h2 class="text-3xl text-center font-bold m-6">Contact Me</h2>
+          <p class="text-gray-600 mb-8">
+            I'd love to hear from you! Reach out via any platform below.
+          </p>
+          <ul class="space-y-4 text-lg">
+            <li>
+              <i class="bi bi-envelope-at-fill text-red-400"></i>
+              <a href="mailto:hnitoomay.kuku@gmail.com" class="hover:underline">
+                hnitoomay.kuku@gmail.com
+              </a>
+            </li>
+
+            <li>
+              <i class="bi bi-linkedin text-sky-600"></i>
+              <a
+                href="https://www.linkedin.com/in/hnit-oo-may-017225277/"
+                target="_blank"
+                class="hover:underline"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <i class="bi bi-github text-violet-800"></i>
+              <a
+                href="https://github.com/hnitoomay"
+                target="_blank"
+                class="hover:underline"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <i class="bi bi-facebook text-blue-600"></i>
+              <a
+                href="https://www.facebook.com/hnit.o.may.7"
+                target="_blank"
+                class="hover:underline"
+                >Facebook</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>
